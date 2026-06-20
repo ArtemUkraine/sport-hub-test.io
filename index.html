@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sport Instructor Hub 2026</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Логотип" />
+      <span>Activchik</span>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-item dropdown">
+        <button class="nav-link">Естафети</button>
+
+        <div class="dropdown-menu">
+          <a href="#regular-relays">Звичайні</a>
+          <a href="#water-relays">Водні</a>
+        </div>
+      </div>
+
+      <a href="#big-games" class="nav-link">Великі ігри</a>
+      <a href="#schedule" class="nav-link">Розклад</a>
+    </nav>
+
+    <button class="burger" aria-label="Відкрити меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-label">Табір 2026 • с. Загінці</p>
+    
+          <h1>Сайт спортінструктора Актівчика</h1>
+          
+          <p class="hero-text">
+            Найкращий табір, найкращий вайб з супер-спорт інструктором 😉
+          </p>
+          
+          <a
+            class="music-card music-link"
+            href="https://music.youtube.com/watch?v=vZ1u1HamLTc"
+            target="_blank"
+          >
+            <img
+              class="music-image"
+              src="images/child-of-god.png"
+              alt="HEAVEN ON THIS EARTH"
+            />
+          
+            <div class="music-info">
+              <span class="music-title">HEAVEN ON THIS EARTH</span>
+              <span class="music-subtitle">
+                Forrest Frank и Torey D'Shaun • CHILD OF GOD (DELUXE) • 2024
+              </span>
+            </div>
+          </a>
+          
+          <div class="hero-buttons">
+            <a href="#regular-relays" class="btn primary-btn">До естафет</a>
+            <a href="#schedule" class="btn secondary-btn">Розклад</a>
+          </div>
+
+            </div>
+          
+            <div class="hero-image-container">
+              <img
+                src="images/photocamp.png"
+                alt="Табір Актівчик"
+                class="hero-image"
+              >
+            </div>
+          
+          </section>
+          
+    <section id="regular-relays" class="section">
+      <div class="section-header">
+        <p class="section-label">18 заготовок</p>
+        <h2>Звичайні естафети</h2>
+        <p>Тут будуть основні естафети для табору.</p>
+      </div>
+
+      <div class="cards-grid" id="regularRelaysContainer">
+        <!-- Картки звичайних естафет зʼявляться через JS / DATA -->
+      </div>
+    </section>
+
+    <section id="water-relays" class="section dark-section">
+      <div class="section-header">
+        <p class="section-label">4 заготовки</p>
+        <h2>Водні естафети</h2>
+        <p>Тут будуть естафети з водою для спекотних днів.</p>
+      </div>
+
+      <div class="cards-grid" id="waterRelaysContainer">
+        <!-- Картки водних естафет зʼявляться через JS / DATA -->
+      </div>
+    </section>
+
+    <section id="big-games" class="section">
+      <div class="section-header">
+        <p class="section-label">Командні активності</p>
+        <h2>Великі ігри</h2>
+        <p>Тут будуть великі ігри для загонів або всього табору.</p>
+      </div>
+
+      <div class="cards-grid" id="bigGamesContainer">
+        <!-- Картки великих ігор зʼявляться через JS / DATA -->
+      </div>
+    </section>
+
+    <section id="schedule" class="section dark-section">
+      <div class="section-header">
+        <p class="section-label">Понеділок — Пʼятниця</p>
+        <h2>Розклад</h2>
+        <p>Обирай день і дивись, що проводити.</p>
+      </div>
+
+      <div class="schedule-tabs">
+        <button class="day-btn active" data-day="monday">Понеділок</button>
+        <button class="day-btn" data-day="tuesday">Вівторок</button>
+        <button class="day-btn" data-day="wednesday">Середа</button>
+        <button class="day-btn" data-day="thursday">Четвер</button>
+        <button class="day-btn" data-day="friday">Пʼятниця</button>
+      </div>
+
+      <div class="schedule-content" id="scheduleContainer">
+        <!-- Розклад зʼявиться через JS / DATA -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Sport Instructor Hub 2026 • Актівчик • с. Загінці</p>
+  </footer>
+
+  <script src="data/regular-relays.js"></script>
+  <script src="data/water-relays.js"></script>
+  <script src="data/big-games.js"></script>
+  <script src="data/shedule.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
